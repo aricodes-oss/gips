@@ -52,7 +52,6 @@ func (r *Record) End() int {
 }
 
 func (r *Record) Patch(input []byte) []byte {
-
 	if r.RLE {
 		for address := r.Offset; address < r.Offset+uint32(r.Size); address++ {
 			input[address] = r.Data[0]
