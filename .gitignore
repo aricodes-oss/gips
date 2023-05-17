@@ -32,3 +32,5 @@ go.work
 gips
 *.ips
 *.gba
+!record.ips
+!rle.ips
